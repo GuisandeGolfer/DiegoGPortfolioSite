@@ -1,6 +1,7 @@
 let spritesheet;
 let spritedata;
 
+
 let animation = [];
 
 let horses = [];
@@ -10,10 +11,14 @@ function preload() {
     spritesheet = loadImage('images/spriteData/horse.png');
 }
 
+function windowResized() {
+    let canvasParent = document.getElementById('lead-overlay').clientHeight;
+    resizeCanvas(windowWidth, canvasParent);
+}
 
 function setup() {
-
-    const canvas = createCanvas(640, 480);
+    let canvasParent = document.getElementById('lead-overlay').clientHeight;
+    const canvas = createCanvas(windowWidth, canvasParent);
     canvas.parent('lead-overlay');
 
     let frames = spritedata.frames;
@@ -31,7 +36,10 @@ function setup() {
 function draw() {
     background(0);
 
+
+
     for (let horse of horses) {
+        translate(0, 0);
         horse.show();
         horse.animate();
     }
