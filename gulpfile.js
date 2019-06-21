@@ -34,27 +34,8 @@ gulp.task('styles', () => {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('sketch', () => {
-    return gulp.src('js/sketch.js')
-        .pipe(plumber(plumber({
-            errorHandler: err => {
-                console.log(err);
-                this.emit('end');
-            }
-        })))
-        .pipe(uglify({
-            output: {
-                comments: '/^!/'
-            }
-        }))
-        .pipe(rename({
-            extname: '.min.js'
-        }))
-        .pipe(gulp.dest('js'));
-});
 
 gulp.task('watch', () => {
     gulp.watch('js/scripts.js', gulp.series('scripts'));
-    gulp.watch('js/sketch.js', gulp.series('sketch'));
     gulp.watch('scss/styles.scss', gulp.series('styles'));
 });
