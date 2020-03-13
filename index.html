@@ -5,21 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Diego Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
-    <script src="js/sketch.js"></script> -->
-    <!-- Added in my two script tags for my sketch and the p5 library 
-        Nothing has been changed in the <body> of the html 
-
-            or the SaSS or CSS. 
-    -->
     <style>
         iframe {
             position: absolute;
@@ -67,7 +59,7 @@
         <div id="lead-content">
             <h1>Diego Guisande</h1>
             <h2>Junior Web Developer</h2>
-            <a href="./images/WebDevelopment_v1_Website_Resume.docx" download="WebDevelopment_v1_Website_Resume.docx"
+            <a href="./images/DiegoGuisandeResume - Copy.docx" download="WebDevelopment_v1_Website_Resume.docx"
                 class="btn-rounded-white">
                 Download Resume
             </a>
@@ -92,7 +84,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
-                    <!-- <img src=""> -->
+                    <img src="images\startUpSac.jpg" id="aboutIMG">
                 </div>
                 <div class="col-md-8">
                     <p>
@@ -101,10 +93,11 @@
                         Sacramento.
                         <!-- little background -->
                         Growing up in the San Francisco Bay Area exposed me to a lot of things. I learned of my passion
-                        for technology two years ago.
+                        for technology three years ago.
                         In 2018, I transferred from the California Maritime Academy after wanting to take my learning of
-                        programming seriously. I will be graduatiing from
-                        CSUS, with a Business BA in Management Information Systems, in Fall 2020. I am interested in the
+                        programming seriously. I will be graduating from
+                        CSUS, with a Business BA in Management Information Systems in Summer 2020. I am interested in
+                        the
                         creative applications of code, data visualization, and
                         web applications.
                         <!-- who I am and why you should hire me  -->
@@ -147,15 +140,17 @@
                 </p>
             </div>
 
-            <!-- <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
+            <div data-date="September 2015 – September 2016">
+                <h3>California Energy Commission</h3>
+                <h4>Student Assistant Programmer</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
-                    laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
-                    libero. Morbi dapibus porta quam laoreet placerat.
+                    I actively maintain and improve a 3D visualization that displays the seasonal variation of
+                    hydroelectric plants in California.
+                    The visualization shows generation and pumped storage projects of over 10 MW with their capacity
+                    factors (CF) on a base map of rivers and lakes. <strong>The live version can be seen in the <a
+                            href="#projects">Projects</a> Section</strong>
                 </p>
-            </div> -->
+            </div>
         </div>
     </div>
     <!-- End #experience -->
@@ -167,9 +162,10 @@
             <span class="education-date">August 2016 - August 2018</span>
             <h4>Bachelor of Arts in International Business & Logistics</h4>
             <p>
-                I spent my first two years of university at the California Maritime Academy. This time helped me pursue
-                my interest of international relations
-                and my interests in business. My discipline and work ethic improved drastically during my time here, and
+                I spent my first two years of university at the California State University, Maritime Academy. This time
+                helped me pursue
+                my interest of international relations and my interests in business. My discipline and work ethic
+                improved drastically during my time here, and
                 help me find and explore of what interested me.
                 I discovered my passion for web development near the end of my time at CMA, and this lead me to transfer
                 to
@@ -184,10 +180,10 @@
             <h4> </h4>
             <p>
                 I only spent a semester at my local community college, Contra Costa College, yet this time was very
-                crucial to my transition to
-                Sacramento State. In this time, I learned a lot about the pursuit of financial freedom. Therefore, I
-                took two real estate classes, Business Law,
-                and Object-Oriented Programming in Java at CCC. After finals this semester, I was admitted to California
+                crucial to my transition to Sacramento State. In this time, I learned a lot about the pursuit of
+                financial freedom. Therefore, I
+                took two real estate classes, Business Law, and Object-Oriented Programming in Java at CCC. Promptly
+                after my finals at CCC, I was admitted to California
                 State University, Sacramento.
             </p>
         </div>
@@ -196,11 +192,11 @@
             <span class="education-date">January 2019 - Fall 2020</span>
             <h4>Bachelor of Arts in Busines Administration: Management Information Systems</h4>
             <p>
-                I will graduating from CSUS in the Fall of 2020. I hope to specialize my skills in application
-                development, and system
-                architecture. Being born in San Francisco, I hope to be able to move back to the Bay Area and contribute
-                to the community that
-                has given me so much.
+                I will graduating from CSUS in Summer of 2020. I hope to specialize my skills in application
+                development, machine learning, and data visualizations. I am open to positions that present learning
+                opportunities, butbeing born in San Francisco, I hope to be able to move back to the Bay Area and
+                contribute
+                to the community that has given me so much.
             </p>
         </div>
         <!-- End .education-block -->
@@ -213,17 +209,18 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/projectBoilerImage.jpg" />
+                        <img src="images/flocking.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Bird Flocking Physics Simulator</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
                             volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
                             eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://guisandegolfer.github.io/FlockingLPage.github.io/">View
+                            Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -231,17 +228,19 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/projectBoilerImage.jpg" />
+                        <img src="images/HydroToolSnippet.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>3D Hydro visualization</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
-                            volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
-                            eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            This project was originally developed by my predecessor at the California Energy Commission,
+                            Harsh Gupta.
+                            After his departure, I have been improving and maintaining this project.
                         </p>
-                        <a href="#">View Project</a>
+                        <a
+                            href="https://www.energy.ca.gov/data-reports/energy-almanac/california-electricity-data/visualization-seasonal-variation-california">View
+                            Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -254,10 +253,9 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>Microsoft Office Suite</li>
+            <li>Microsoft Excel</li>
             <li>JavaScript</li>
             <li>Python</li>
-            <li>DJango</li>
             <li>Flask</li>
             <li>Node.js</li>
             <li>Express</li>
@@ -272,7 +270,7 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
+            <form method="POST" action="https://formspree.io/xnqzqeeb">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
@@ -299,7 +297,7 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github"
+                            <a href="https://github.com/GuisandeGolfer" target="_blank"><i class="fa fa-github"
                                     aria-hidden="true"></i></a>
                         </li>
                         <li>
@@ -307,8 +305,8 @@
                                     aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/diego-guisande-31575a158/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
