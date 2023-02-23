@@ -273,6 +273,7 @@ footer {
   background-size: cover;
   padding: 15px;
   overflow: hidden;
+  z-index: 0;
 }
 
 #lead-content {
@@ -318,6 +319,12 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+
+#iframe {
+  border: none;
+  margin: 30px;
+  
 }
 
 #lead-down {
