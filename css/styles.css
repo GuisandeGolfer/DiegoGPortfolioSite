@@ -186,7 +186,7 @@ footer {
 
 #aboutIMG {
   padding-bottom: 20px;
-  padding-right: 25px;
+  padding-right: 40px;
 }
 
 .top i {
@@ -381,6 +381,8 @@ footer {
 #about p {
   color: #74808a;
   margin: 0;
+  margin-left: 50%;
+  margin-top: 100px;
 }
 
 #experience {
@@ -797,6 +799,7 @@ footer {
 
   #about p {
     text-align: left;
+
   }
 }
 
